@@ -1,0 +1,112 @@
+...EEEEEEEEEEEE........................................................................................................................................................................................................................................................................................................................................................................................................................................................................K........................................................................................................................................................................................................................................K......................Warning: overflow encountered in ldexp
+.......................................................................K......................K........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................S.........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+======================================================================
+ERROR: test_creation (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 10, in test_creation
+    dt1 = np.dtype('M8[750%s]'%unit)
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_creation_overflow (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 62, in test_creation_overflow
+    timesteps = np.array([date], dtype='datetime64[s]')[0].astype(np.int64)
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_divisor_conversion_as (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 58, in test_divisor_conversion_as
+    self.assertRaises(ValueError, lambda : np.dtype('M8[as/10]'))
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/unittest.py", line 320, in failUnlessRaises
+    callableObj(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 58, in <lambda>
+    self.assertRaises(ValueError, lambda : np.dtype('M8[as/10]'))
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_divisor_conversion_bday (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 32, in test_divisor_conversion_bday
+    assert np.dtype('M8[B/12]') == np.dtype('M8[2h]')
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_divisor_conversion_day (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 37, in test_divisor_conversion_day
+    assert np.dtype('M8[D/12]') == np.dtype('M8[2h]')
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_divisor_conversion_fs (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 54, in test_divisor_conversion_fs
+    assert np.dtype('M8[fs/100]') == np.dtype('M8[10as]')
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_divisor_conversion_hour (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 42, in test_divisor_conversion_hour
+    assert np.dtype('m8[h/30]') == np.dtype('m8[2m]')
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_divisor_conversion_minute (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 46, in test_divisor_conversion_minute
+    assert np.dtype('m8[m/30]') == np.dtype('m8[2s]')
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_divisor_conversion_month (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 21, in test_divisor_conversion_month
+    assert np.dtype('M8[M/2]') == np.dtype('M8[2W]')
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_divisor_conversion_second (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 50, in test_divisor_conversion_second
+    assert np.dtype('m8[s/100]') == np.dtype('m8[10ms]')
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_divisor_conversion_week (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 26, in test_divisor_conversion_week
+    assert np.dtype('m8[W/5]') == np.dtype('m8[B]')
+TypeError: data type not understood
+
+======================================================================
+ERROR: test_divisor_conversion_year (test_datetime.TestDateTime)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/tests/test_datetime.py", line 16, in test_divisor_conversion_year
+    assert np.dtype('M8[Y/4]') == np.dtype('M8[3M]')
+TypeError: data type not understood
+
+----------------------------------------------------------------------
+Ran 3048 tests in 16.191s
+
+FAILED (KNOWNFAIL=4, SKIP=1, errors=12)
+Python2.5 on branch family numpy
+Running unit tests for numpy
+NumPy version 1.5.1rc1
+NumPy is installed in /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy
+Python version 2.5.4 (r254:67917, Dec 23 2008, 14:57:27) [GCC 4.0.1 (Apple Computer, Inc. build 5363)]
+nose version 0.11.3
