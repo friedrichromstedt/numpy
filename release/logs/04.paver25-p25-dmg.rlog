@@ -1,0 +1,4 @@
+Usage: paver2.5 [global options] taskname [task options] [taskname [taskoptions]]
+
+paver2.5: error: no such option: -p
+Python2.5 on branch family numpy
