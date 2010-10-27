@@ -18,3 +18,4 @@ dist
 /numpy/core/__svn_version__.py
 /doc/numpy.scipy.org/_build
 /release/installers
+.DS_Store
