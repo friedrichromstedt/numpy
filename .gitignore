@@ -17,3 +17,5 @@ dist
 *.egg-info
 /numpy/core/__svn_version__.py
 /doc/numpy.scipy.org/_build
+.DS_Store
+/release/installers
