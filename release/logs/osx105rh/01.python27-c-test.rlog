@@ -1,0 +1,106 @@
+........................................................................................................Warning: overflow encountered in add
+Warning: invalid value encountered in subtract
+Warning: invalid value encountered in subtract
+Warning: overflow encountered in add
+Warning: invalid value encountered in subtract
+Warning: invalid value encountered in subtract
+.................................................................................................................................................................................................................................................................................................................................................................................K........................................................................................................................................................................................................................................K...K..................Warning: overflow encountered in ldexp
+.....................................F..F..............................K........F....FFFF.....K........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................S.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+======================================================================
+FAIL: test_umath.test_nextafterl
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/case.py", line 186, in runTest
+    self.test(*self.arg)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/testing/decorators.py", line 215, in knownfailer
+    return f(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/tests/test_umath.py", line 1033, in test_nextafterl
+    return _test_nextafter(np.longdouble)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/tests/test_umath.py", line 1019, in _test_nextafter
+    assert np.nextafter(one, two) - one == eps
+AssertionError
+
+======================================================================
+FAIL: test_umath.test_spacingl
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/case.py", line 186, in runTest
+    self.test(*self.arg)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/testing/decorators.py", line 215, in knownfailer
+    return f(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/tests/test_umath.py", line 1058, in test_spacingl
+    return _test_spacing(np.longdouble)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/tests/test_umath.py", line 1042, in _test_spacing
+    assert np.spacing(one) == eps
+AssertionError
+
+======================================================================
+FAIL: test_umath_complex.TestCexp.test_special_values(<ufunc 'exp'>, inf, 0, inf, 0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/case.py", line 186, in runTest
+    self.test(*self.arg)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/tests/test_umath_complex.py", line 579, in check_complex_value
+    assert_equal(f(z1), z2)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/testing/utils.py", line 256, in assert_equal
+    return assert_array_equal(actual, desired, err_msg, verbose)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/testing/utils.py", line 686, in assert_array_equal
+    verbose=verbose, header='Arrays are not equal')
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/testing/utils.py", line 596, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+
+(x and y nan location mismatch [ True], False mismatch)
+ x: array([ inf nanj])
+ y: array((inf+0j))
+
+======================================================================
+FAIL: test_umath_complex.TestCexp.test_special_values(None,)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/case.py", line 186, in runTest
+    self.test(*self.arg)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/tests/test_umath_complex.py", line 81, in _check_ninf_inf
+    raise AssertionError(msgform %(z.real, z.imag))
+AssertionError: cexp(-inf, inf) is (nan, nan), expected (+-0, +-0)
+
+======================================================================
+FAIL: test_umath_complex.TestCexp.test_special_values(None,)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/case.py", line 186, in runTest
+    self.test(*self.arg)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/tests/test_umath_complex.py", line 94, in _check_inf_inf
+    raise AssertionError(msgform % (z.real, z.imag))
+AssertionError: cexp(inf, inf) is (nan, nan), expected (+-inf, nan)
+
+======================================================================
+FAIL: test_umath_complex.TestCexp.test_special_values(None,)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/case.py", line 186, in runTest
+    self.test(*self.arg)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/tests/test_umath_complex.py", line 107, in _check_ninf_nan
+    raise AssertionError(msgform % (z.real, z.imag))
+AssertionError: cexp(-inf, nan) is (nan, nan), expected (+-0, +-0)
+
+======================================================================
+FAIL: test_umath_complex.TestCexp.test_special_values(None,)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/case.py", line 186, in runTest
+    self.test(*self.arg)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/tests/test_umath_complex.py", line 120, in _check_inf_nan
+    raise AssertionError(msgform % (z.real, z.imag))
+AssertionError: cexp(-inf, nan) is (nan, nan), expected (+-inf, nan)
+
+----------------------------------------------------------------------
+Ran 3006 tests in 58.289s
+
+FAILED (KNOWNFAIL=5, SKIP=1, failures=7)
+Running unit tests for numpy
+NumPy version 1.5.1rc1
+NumPy is installed in /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy
+Python version 2.7 (r27:82508, Jul  3 2010, 20:17:05) [GCC 4.0.1 (Apple Inc. build 5493)]
+nose version 0.11.3
