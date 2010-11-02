@@ -21,7 +21,7 @@ finally:
 # TODO: replace with a check on whether platform-provided C99 funcs are used
 have_platform_functions = (sys.platform.startswith('win')
                            or sys.platform.startswith('sunos')
-                           or (sys.platform == 'darwin' and 'ppc' in
+                           or (sys.platform == 'darwin' and 'powerpc' in
                                platform.processor()))
 skip_complex_tests = have_platform_functions and functions_seem_flaky
 
