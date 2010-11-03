@@ -1,0 +1,3 @@
+0000000000000ff8 t __dyld_func_lookup
+0000000000000000 t __mh_bundle_header
+0000000000000fe4 t dyld_stub_binding_helper
