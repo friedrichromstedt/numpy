@@ -1,0 +1,162 @@
+Running from numpy source directory.non-existing path in 'numpy/distutils': 'site.cfg'
+F2PY Version 1
+blas_opt_info:
+  FOUND:
+    extra_link_args = ['-Wl,-framework', '-Wl,Accelerate']
+    define_macros = [('NO_ATLAS_INFO', 3)]
+    extra_compile_args = ['-msse3', '-I/System/Library/Frameworks/vecLib.framework/Headers']
+
+lapack_opt_info:
+  FOUND:
+    extra_link_args = ['-Wl,-framework', '-Wl,Accelerate']
+    define_macros = [('NO_ATLAS_INFO', 3)]
+    extra_compile_args = ['-msse3']
+
+running install
+running build
+running config_cc
+unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+build_src
+building py_modules sources
+building library "npymath" sources
+customize NAGFCompiler
+Could not locate executable f95
+customize AbsoftFCompiler
+Could not locate executable f90
+Could not locate executable f77
+customize IBMFCompiler
+Could not locate executable xlf90
+Could not locate executable xlf
+customize IntelFCompiler
+Could not locate executable ifort
+Could not locate executable ifc
+customize GnuFCompiler
+Could not locate executable g77
+customize Gnu95FCompiler
+Found executable /usr/local/bin/gfortran
+/Users/Friedrich/Development/numpy/numpy/distutils/fcompiler/gnu.py:126: UserWarning: Env. variable MACOSX_DEPLOYMENT_TARGET set to 10.3
+  warnings.warn(s)
+customize Gnu95FCompiler
+customize Gnu95FCompiler using config
+C compiler: gcc -arch ppc -arch i386 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -fno-strict-aliasing -Wno-long-double -no-cpp-precomp -mno-fused-madd -fno-common -dynamic -DNDEBUG -g -O3
+
+compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/include -I/Library/Frameworks/Python.framework/Versions/2.5/include/python2.5 -c'
+gcc: _configtest.c
+gcc _configtest.o -o _configtest
+success!
+removing: _configtest.c _configtest.o _configtest
+C compiler: gcc -arch ppc -arch i386 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -fno-strict-aliasing -Wno-long-double -no-cpp-precomp -mno-fused-madd -fno-common -dynamic -DNDEBUG -g -O3
+
+compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/include -I/Library/Frameworks/Python.framework/Versions/2.5/include/python2.5 -c'
+gcc: _configtest.c
+_configtest.c:1: warning: conflicting types for built-in function 'exp'
+_configtest.c:1: warning: conflicting types for built-in function 'exp'
+gcc _configtest.o -o _configtest
+success!
+removing: _configtest.c _configtest.o _configtest
+building extension "numpy.core._sort" sources
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/config.h' to sources.
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/_numpyconfig.h' to sources.
+executing numpy/core/code_generators/generate_numpy_api.py
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__multiarray_api.h' to sources.
+numpy.core - nothing done with h_files = ['build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/config.h', 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/_numpyconfig.h', 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__multiarray_api.h']
+building extension "numpy.core.multiarray" sources
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/config.h' to sources.
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/_numpyconfig.h' to sources.
+executing numpy/core/code_generators/generate_numpy_api.py
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__multiarray_api.h' to sources.
+numpy.core - nothing done with h_files = ['build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/config.h', 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/_numpyconfig.h', 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__multiarray_api.h']
+building extension "numpy.core.umath" sources
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/config.h' to sources.
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/_numpyconfig.h' to sources.
+executing numpy/core/code_generators/generate_ufunc_api.py
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__ufunc_api.h' to sources.
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/src/umath' to include_dirs.
+numpy.core - nothing done with h_files = ['build/src.macosx-10.3-i386-2.5/numpy/core/src/umath/funcs.inc', 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/config.h', 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/_numpyconfig.h', 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__ufunc_api.h']
+building extension "numpy.core.scalarmath" sources
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/config.h' to sources.
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/_numpyconfig.h' to sources.
+executing numpy/core/code_generators/generate_numpy_api.py
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__multiarray_api.h' to sources.
+executing numpy/core/code_generators/generate_ufunc_api.py
+  adding 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__ufunc_api.h' to sources.
+numpy.core - nothing done with h_files = ['build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/config.h', 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/_numpyconfig.h', 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__multiarray_api.h', 'build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__ufunc_api.h']
+building extension "numpy.core._dotblas" sources
+  adding 'numpy/core/blasdot/_dotblas.c' to sources.
+building extension "numpy.core.umath_tests" sources
+building extension "numpy.core.multiarray_tests" sources
+building extension "numpy.lib._compiled_base" sources
+building extension "numpy.numarray._capi" sources
+building extension "numpy.fft.fftpack_lite" sources
+building extension "numpy.linalg.lapack_lite" sources
+  adding 'numpy/linalg/lapack_litemodule.c' to sources.
+  adding 'numpy/linalg/python_xerbla.c' to sources.
+building extension "numpy.random.mtrand" sources
+/Users/Friedrich/Development/numpy/numpy/distutils/command/config.py:40: DeprecationWarning: 
++++++++++++++++++++++++++++++++++++++++++++++++++
+Usage of try_run is deprecated: please do not 
+use it anymore, and avoid configuration checks 
+involving running executable on the target machine.
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  DeprecationWarning)
+C compiler: gcc -arch ppc -arch i386 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -fno-strict-aliasing -Wno-long-double -no-cpp-precomp -mno-fused-madd -fno-common -dynamic -DNDEBUG -g -O3
+
+compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/include -I/Library/Frameworks/Python.framework/Versions/2.5/include/python2.5 -c'
+gcc: _configtest.c
+gcc _configtest.o -o _configtest
+_configtest
+failure.
+removing: _configtest.c _configtest.o _configtest
+building data_files sources
+build_src: building npy-pkg config files
+running build_py
+copying numpy/version.py -> build/lib.macosx-10.3-i386-2.5/numpy
+copying build/src.macosx-10.3-i386-2.5/numpy/__config__.py -> build/lib.macosx-10.3-i386-2.5/numpy
+copying build/src.macosx-10.3-i386-2.5/numpy/distutils/__config__.py -> build/lib.macosx-10.3-i386-2.5/numpy/distutils
+running build_clib
+customize UnixCCompiler
+customize UnixCCompiler using build_clib
+running build_ext
+customize UnixCCompiler
+customize UnixCCompiler using build_ext
+running scons
+running build_scripts
+  adding 'build/scripts.macosx-10.3-i386-2.5/f2py' to scripts
+running install_lib
+copying build/lib.macosx-10.3-i386-2.5/numpy/__config__.py -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy
+copying build/lib.macosx-10.3-i386-2.5/numpy/core/_dotblas.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core
+copying build/lib.macosx-10.3-i386-2.5/numpy/core/_sort.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core
+copying build/lib.macosx-10.3-i386-2.5/numpy/core/multiarray.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core
+copying build/lib.macosx-10.3-i386-2.5/numpy/core/multiarray_tests.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core
+copying build/lib.macosx-10.3-i386-2.5/numpy/core/scalarmath.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core
+copying build/lib.macosx-10.3-i386-2.5/numpy/core/umath.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core
+copying build/lib.macosx-10.3-i386-2.5/numpy/core/umath_tests.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core
+copying build/lib.macosx-10.3-i386-2.5/numpy/distutils/__config__.py -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/distutils
+copying build/lib.macosx-10.3-i386-2.5/numpy/fft/fftpack_lite.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/fft
+copying build/lib.macosx-10.3-i386-2.5/numpy/lib/_compiled_base.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/lib
+copying build/lib.macosx-10.3-i386-2.5/numpy/linalg/lapack_lite.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/linalg
+copying build/lib.macosx-10.3-i386-2.5/numpy/numarray/_capi.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/numarray
+copying build/lib.macosx-10.3-i386-2.5/numpy/random/mtrand.so -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/random
+copying build/lib.macosx-10.3-i386-2.5/numpy/version.py -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/__config__.py to __config__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/distutils/__config__.py to __config__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/version.py to version.pyc
+running install_scripts
+copying build/scripts.macosx-10.3-i386-2.5/f2py -> /Library/Frameworks/Python.framework/Versions/2.5/bin
+changing mode of /Library/Frameworks/Python.framework/Versions/2.5/bin/f2py to 755
+running install_data
+copying build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/_numpyconfig.h -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/include/numpy
+copying build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__multiarray_api.h -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/include/numpy
+copying build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/multiarray_api.txt -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/include/numpy
+copying build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/__ufunc_api.h -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/include/numpy
+copying build/src.macosx-10.3-i386-2.5/numpy/core/include/numpy/ufunc_api.txt -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/include/numpy
+copying build/src.macosx-10.3-i386-2.5/numpy/core/lib/npy-pkg-config/npymath.ini -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/lib/npy-pkg-config
+copying build/src.macosx-10.3-i386-2.5/numpy/core/lib/npy-pkg-config/mlib.ini -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/lib/npy-pkg-config
+running install_egg_info
+Writing /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy-1.5.1rc2-py2.5.egg-info
+running install_clib
+copying build/temp.macosx-10.3-i386-2.5/libnpymath.a -> /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/numpy/core/lib
