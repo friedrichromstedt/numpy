@@ -1,0 +1,400 @@
+Running from numpy source directory.non-existing path in 'numpy/distutils': 'site.cfg'
+F2PY Version 1
+blas_opt_info:
+  FOUND:
+    extra_link_args = ['-Wl,-framework', '-Wl,Accelerate']
+    define_macros = [('NO_ATLAS_INFO', 3)]
+    extra_compile_args = ['-faltivec', '-I/System/Library/Frameworks/vecLib.framework/Headers']
+
+lapack_opt_info:
+  FOUND:
+    extra_link_args = ['-Wl,-framework', '-Wl,Accelerate']
+    define_macros = [('NO_ATLAS_INFO', 3)]
+    extra_compile_args = ['-faltivec']
+
+running install
+running build
+running config_cc
+unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+build_src
+building py_modules sources
+building library "npymath" sources
+customize NAGFCompiler
+Could not locate executable f95
+customize AbsoftFCompiler
+Could not locate executable f90
+Could not locate executable f77
+customize IBMFCompiler
+Could not locate executable xlf90
+Could not locate executable xlf
+customize IntelFCompiler
+Could not locate executable ifort
+Could not locate executable ifc
+customize GnuFCompiler
+Could not locate executable g77
+customize Gnu95FCompiler
+Found executable /usr/local/bin/gfortran
+/Users/Friedrich/Development/numpy/numpy/distutils/fcompiler/gnu.py:126: UserWarning: Env. variable MACOSX_DEPLOYMENT_TARGET set to 10.3
+  warnings.warn(s)
+customize Gnu95FCompiler
+customize Gnu95FCompiler using config
+C compiler: gcc-4.0 -fno-strict-aliasing -fno-common -dynamic -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc -arch i386 -g -O2 -DNDEBUG -g -O3
+
+compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/include -I/Library/Frameworks/Python.framework/Versions/2.6/include/python2.6 -c'
+gcc-4.0: _configtest.c
+gcc-4.0 _configtest.o -o _configtest
+success!
+removing: _configtest.c _configtest.o _configtest
+C compiler: gcc-4.0 -fno-strict-aliasing -fno-common -dynamic -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc -arch i386 -g -O2 -DNDEBUG -g -O3
+
+compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/include -I/Library/Frameworks/Python.framework/Versions/2.6/include/python2.6 -c'
+gcc-4.0: _configtest.c
+_configtest.c:1: warning: conflicting types for built-in function 'exp'
+_configtest.c:1: warning: conflicting types for built-in function 'exp'
+gcc-4.0 _configtest.o -o _configtest
+success!
+removing: _configtest.c _configtest.o _configtest
+building extension "numpy.core._sort" sources
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/config.h' to sources.
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/_numpyconfig.h' to sources.
+executing numpy/core/code_generators/generate_numpy_api.py
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__multiarray_api.h' to sources.
+numpy.core - nothing done with h_files = ['build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/config.h', 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/_numpyconfig.h', 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__multiarray_api.h']
+building extension "numpy.core.multiarray" sources
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/config.h' to sources.
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/_numpyconfig.h' to sources.
+executing numpy/core/code_generators/generate_numpy_api.py
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__multiarray_api.h' to sources.
+numpy.core - nothing done with h_files = ['build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/config.h', 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/_numpyconfig.h', 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__multiarray_api.h']
+building extension "numpy.core.umath" sources
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/config.h' to sources.
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/_numpyconfig.h' to sources.
+executing numpy/core/code_generators/generate_ufunc_api.py
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__ufunc_api.h' to sources.
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/src/umath' to include_dirs.
+numpy.core - nothing done with h_files = ['build/src.macosx-10.3-fat-2.6/numpy/core/src/umath/funcs.inc', 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/config.h', 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/_numpyconfig.h', 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__ufunc_api.h']
+building extension "numpy.core.scalarmath" sources
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/config.h' to sources.
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/_numpyconfig.h' to sources.
+executing numpy/core/code_generators/generate_numpy_api.py
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__multiarray_api.h' to sources.
+executing numpy/core/code_generators/generate_ufunc_api.py
+  adding 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__ufunc_api.h' to sources.
+numpy.core - nothing done with h_files = ['build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/config.h', 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/_numpyconfig.h', 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__multiarray_api.h', 'build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__ufunc_api.h']
+building extension "numpy.core._dotblas" sources
+  adding 'numpy/core/blasdot/_dotblas.c' to sources.
+building extension "numpy.core.umath_tests" sources
+building extension "numpy.core.multiarray_tests" sources
+building extension "numpy.lib._compiled_base" sources
+building extension "numpy.numarray._capi" sources
+building extension "numpy.fft.fftpack_lite" sources
+building extension "numpy.linalg.lapack_lite" sources
+  adding 'numpy/linalg/lapack_litemodule.c' to sources.
+  adding 'numpy/linalg/python_xerbla.c' to sources.
+building extension "numpy.random.mtrand" sources
+/Users/Friedrich/Development/numpy/numpy/distutils/command/config.py:40: DeprecationWarning: 
++++++++++++++++++++++++++++++++++++++++++++++++++
+Usage of try_run is deprecated: please do not 
+use it anymore, and avoid configuration checks 
+involving running executable on the target machine.
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  DeprecationWarning)
+C compiler: gcc-4.0 -fno-strict-aliasing -fno-common -dynamic -isysroot /Developer/SDKs/MacOSX10.4u.sdk -arch ppc -arch i386 -g -O2 -DNDEBUG -g -O3
+
+compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/include -I/Library/Frameworks/Python.framework/Versions/2.6/include/python2.6 -c'
+gcc-4.0: _configtest.c
+gcc-4.0 _configtest.o -o _configtest
+_configtest
+failure.
+removing: _configtest.c _configtest.o _configtest
+building data_files sources
+build_src: building npy-pkg config files
+running build_py
+copying numpy/version.py -> build/lib.macosx-10.3-fat-2.6/numpy
+copying build/src.macosx-10.3-fat-2.6/numpy/__config__.py -> build/lib.macosx-10.3-fat-2.6/numpy
+copying build/src.macosx-10.3-fat-2.6/numpy/distutils/__config__.py -> build/lib.macosx-10.3-fat-2.6/numpy/distutils
+running build_clib
+customize UnixCCompiler
+customize UnixCCompiler using build_clib
+running build_ext
+customize UnixCCompiler
+customize UnixCCompiler using build_ext
+running scons
+running build_scripts
+  adding 'build/scripts.macosx-10.3-fat-2.6/f2py' to scripts
+running install_lib
+copying build/lib.macosx-10.3-fat-2.6/numpy/__config__.py -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy
+copying build/lib.macosx-10.3-fat-2.6/numpy/core/_dotblas.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core
+copying build/lib.macosx-10.3-fat-2.6/numpy/core/_sort.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core
+copying build/lib.macosx-10.3-fat-2.6/numpy/core/multiarray.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core
+copying build/lib.macosx-10.3-fat-2.6/numpy/core/multiarray_tests.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core
+copying build/lib.macosx-10.3-fat-2.6/numpy/core/scalarmath.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core
+copying build/lib.macosx-10.3-fat-2.6/numpy/core/umath.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core
+copying build/lib.macosx-10.3-fat-2.6/numpy/core/umath_tests.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core
+copying build/lib.macosx-10.3-fat-2.6/numpy/distutils/__config__.py -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils
+copying build/lib.macosx-10.3-fat-2.6/numpy/fft/fftpack_lite.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/fft
+copying build/lib.macosx-10.3-fat-2.6/numpy/lib/_compiled_base.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib
+copying build/lib.macosx-10.3-fat-2.6/numpy/linalg/lapack_lite.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/linalg
+copying build/lib.macosx-10.3-fat-2.6/numpy/numarray/_capi.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray
+copying build/lib.macosx-10.3-fat-2.6/numpy/random/mtrand.so -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/random
+copying build/lib.macosx-10.3-fat-2.6/numpy/version.py -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/__config__.py to __config__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/_import_tools.py to _import_tools.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/add_newdocs.py to add_newdocs.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/compat/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/compat/_inspect.py to _inspect.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/compat/py3k.py to py3k.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/compat/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/compat/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/_internal.py to _internal.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/_mx_datetime_parser.py to _mx_datetime_parser.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/arrayprint.py to arrayprint.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/defchararray.py to defchararray.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/fromnumeric.py to fromnumeric.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/function_base.py to function_base.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/generate_numpy_api.py to generate_numpy_api.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/getlimits.py to getlimits.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/info.py to info.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/machar.py to machar.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/memmap.py to memmap.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/numeric.py to numeric.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/numerictypes.py to numerictypes.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/records.py to records.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/scons_support.py to scons_support.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/setup_common.py to setup_common.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/shape_base.py to shape_base.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ctypeslib.py to ctypeslib.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/__config__.py to __config__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/__version__.py to __version__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/ccompiler.py to ccompiler.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/autodist.py to autodist.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/bdist_rpm.py to bdist_rpm.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/build.py to build.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/build_clib.py to build_clib.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/build_ext.py to build_ext.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/build_py.py to build_py.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/build_scripts.py to build_scripts.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/build_src.py to build_src.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/config.py to config.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/config_compiler.py to config_compiler.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/develop.py to develop.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/egg_info.py to egg_info.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/install.py to install.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/install_clib.py to install_clib.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/install_data.py to install_data.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/install_headers.py to install_headers.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/scons.py to scons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/command/sdist.py to sdist.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/compat.py to compat.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/conv_template.py to conv_template.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/core.py to core.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/cpuinfo.py to cpuinfo.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/environment.py to environment.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/exec_command.py to exec_command.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/extension.py to extension.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/absoft.py to absoft.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/compaq.py to compaq.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/g95.py to g95.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/gnu.py to gnu.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/hpux.py to hpux.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/ibm.py to ibm.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/intel.py to intel.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/lahey.py to lahey.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/mips.py to mips.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/nag.py to nag.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/none.py to none.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/pg.py to pg.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/sun.py to sun.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/fcompiler/vast.py to vast.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/from_template.py to from_template.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/info.py to info.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/intelccompiler.py to intelccompiler.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/interactive.py to interactive.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/lib2def.py to lib2def.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/line_endings.py to line_endings.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/log.py to log.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/mingw32ccompiler.py to mingw32ccompiler.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/misc_util.py to misc_util.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/npy_pkg_config.py to npy_pkg_config.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/numpy_distribution.py to numpy_distribution.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/system_info.py to system_info.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/distutils/unixccompiler.py to unixccompiler.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/basics.py to basics.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/broadcasting.py to broadcasting.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/byteswapping.py to byteswapping.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/constants.py to constants.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/creation.py to creation.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/glossary.py to glossary.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/howtofind.py to howtofind.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/indexing.py to indexing.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/internals.py to internals.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/io.py to io.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/jargon.py to jargon.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/methods_vs_functions.py to methods_vs_functions.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/misc.py to misc.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/performance.py to performance.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/structured_arrays.py to structured_arrays.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/subclassing.py to subclassing.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/doc/ufuncs.py to ufuncs.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/dual.py to dual.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/__version__.py to __version__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/auxfuncs.py to auxfuncs.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/capi_maps.py to capi_maps.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/cb_rules.py to cb_rules.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/cfuncs.py to cfuncs.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/common_rules.py to common_rules.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/crackfortran.py to crackfortran.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/diagnose.py to diagnose.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/f2py2e.py to f2py2e.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/f2py_testing.py to f2py_testing.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/f90mod_rules.py to f90mod_rules.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/func2subr.py to func2subr.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/info.py to info.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/rules.py to rules.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/f2py/use_rules.py to use_rules.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/fft/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/fft/fftpack.py to fftpack.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/fft/helper.py to helper.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/fft/info.py to info.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/fft/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/fft/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/_datasource.py to _datasource.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/_iotools.py to _iotools.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/arraysetops.py to arraysetops.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/arrayterator.py to arrayterator.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/financial.py to financial.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/format.py to format.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/function_base.py to function_base.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/index_tricks.py to index_tricks.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/info.py to info.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/npyio.py to npyio.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/polynomial.py to polynomial.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/recfunctions.py to recfunctions.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/scimath.py to scimath.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/shape_base.py to shape_base.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/stride_tricks.py to stride_tricks.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/twodim_base.py to twodim_base.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/type_check.py to type_check.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/ufunclike.py to ufunclike.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/user_array.py to user_array.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/lib/utils.py to utils.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/linalg/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/linalg/info.py to info.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/linalg/linalg.py to linalg.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/linalg/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/linalg/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ma/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ma/bench.py to bench.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ma/core.py to core.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ma/extras.py to extras.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ma/mrecords.py to mrecords.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ma/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ma/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ma/testutils.py to testutils.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ma/timer_comparison.py to timer_comparison.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/ma/version.py to version.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/matlib.py to matlib.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/matrixlib/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/matrixlib/defmatrix.py to defmatrix.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/matrixlib/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/matrixlib/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/alter_code1.py to alter_code1.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/alter_code2.py to alter_code2.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/compat.py to compat.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/convolve.py to convolve.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/fft.py to fft.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/functions.py to functions.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/image.py to image.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/linear_algebra.py to linear_algebra.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/ma.py to ma.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/matrix.py to matrix.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/mlab.py to mlab.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/nd_image.py to nd_image.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/numerictypes.py to numerictypes.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/random_array.py to random_array.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/session.py to session.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/ufuncs.py to ufuncs.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/numarray/util.py to util.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/alter_code1.py to alter_code1.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/alter_code2.py to alter_code2.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/array_printer.py to array_printer.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/arrayfns.py to arrayfns.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/compat.py to compat.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/fft.py to fft.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/fix_default_axis.py to fix_default_axis.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/functions.py to functions.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/linear_algebra.py to linear_algebra.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/ma.py to ma.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/matrix.py to matrix.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/misc.py to misc.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/mlab.py to mlab.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/precision.py to precision.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/random_array.py to random_array.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/rng.py to rng.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/rng_stats.py to rng_stats.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/typeconv.py to typeconv.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/ufuncs.py to ufuncs.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/oldnumeric/user_array.py to user_array.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/polynomial/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/polynomial/chebyshev.py to chebyshev.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/polynomial/polynomial.py to polynomial.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/polynomial/polytemplate.py to polytemplate.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/polynomial/polyutils.py to polyutils.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/polynomial/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/random/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/random/info.py to info.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/random/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/random/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/testing/__init__.py to __init__.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/testing/decorators.py to decorators.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/testing/noseclasses.py to noseclasses.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/testing/nosetester.py to nosetester.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/testing/nulltester.py to nulltester.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/testing/numpytest.py to numpytest.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/testing/setup.py to setup.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/testing/setupscons.py to setupscons.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/testing/utils.py to utils.pyc
+byte-compiling /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/version.py to version.pyc
+running install_scripts
+copying build/scripts.macosx-10.3-fat-2.6/f2py -> /Library/Frameworks/Python.framework/Versions/2.6/bin
+changing mode of /Library/Frameworks/Python.framework/Versions/2.6/bin/f2py to 755
+running install_data
+copying build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/_numpyconfig.h -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/include/numpy
+copying build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__multiarray_api.h -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/include/numpy
+copying build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/multiarray_api.txt -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/include/numpy
+copying build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/__ufunc_api.h -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/include/numpy
+copying build/src.macosx-10.3-fat-2.6/numpy/core/include/numpy/ufunc_api.txt -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/include/numpy
+copying build/src.macosx-10.3-fat-2.6/numpy/core/lib/npy-pkg-config/npymath.ini -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/lib/npy-pkg-config
+copying build/src.macosx-10.3-fat-2.6/numpy/core/lib/npy-pkg-config/mlib.ini -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/lib/npy-pkg-config
+running install_egg_info
+Writing /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy-1.5.1-py2.6.egg-info
+running install_clib
+copying build/temp.macosx-10.3-fat-2.6/libnpymath.a -> /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/numpy/core/lib
